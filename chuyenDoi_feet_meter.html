@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+meter:
+<input type="number" id="meter" onchange="converse();">
+<p id="meterId"></p>
+feet:
+<input type="number" id="feet" onchange="converse();">
+<p id="feetId"></p>
+<script>
+
+    function converse(meter, feet) {
+        meter = document.getElementById("meter").value;
+        feet = document.getElementById("feet").value;
+        let result_meter = document.getElementById("feetId").innerHTML = feet * 0.305 + " meter";
+        let result_feet = document.getElementById("meterId").innerHTML = meter * 3.279 + " feet";
+    }
+
+</script>
+
+</body>
+</html>
